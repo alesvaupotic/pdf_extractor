@@ -1,15 +1,15 @@
 {
 	"name": "pdf_extractor",
 	"version": "1.0.0",
-	"description": "",
+	"description": "PDF Pages Extractor",
 	"type": "module",
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"keywords": [],
-	"author": "",
-	"license": "ISC",
+	"author": "Aleš Vaupotič",
+	"license": "MIT",
 	"packageManager": "pnpm@10.20.0",
 	"devDependencies": {
 		"pdf-lib": "1.17.1"
