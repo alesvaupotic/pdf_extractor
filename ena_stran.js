@@ -4,13 +4,12 @@ import path from "node:path";
 
 const filename = process.argv[2];
 
-console.log("Berem ", filename);
-
 const inputPdfBytes = fs.readFileSync(filename);
 const inputPdfDoc = await PDFDocument.load(inputPdfBytes);
 const pages = inputPdfDoc.getPageCount();
+
 const folder_name = filename.replace(".pdf", "_posamicno");
-fs.mkdirSync("./" + folder_name, { recursive: true, replace: true });
+fs.mkdirSync("./" + folder_name, { recursive: true });
 
 const out_filename = path.basename(filename);
 
